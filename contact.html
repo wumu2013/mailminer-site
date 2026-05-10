@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - MailMiner</title>
+  <meta name="description" content="Get in touch with MailMiner. Start your 7-day free trial or contact our team.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="MailMiner">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Start Free Trial</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Start your free trial or reach out with questions. We're here to help.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Let's Talk</h2>
+          <p>Whether you're exploring AI for your trade business or ready to start, we'd love to hear from you.</p>
+
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <a href="mailto:support@mailminer.work">support@mailminer.work</a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Response Time:</strong>
+            <span>We reply within 24 hours</span>
+          </div>
+
+          <div class="contact-item">
+            <strong>Business Hours:</strong>
+            <span>Monday - Friday, 9am - 6pm (China Standard Time)</span>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="mailto:support@mailminer.work" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Your company name">
+            </div>
+            <div class="form-group">
+              <label for="message">How Can We Help?</label>
+              <textarea id="message" name="message" placeholder="Tell us about your trade workflow and how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Message (Hidden by default, shown after mailto) -->
+  <section class="section" id="success-section" style="display: none;">
+    <div class="container">
+      <div class="success-message" style="max-width: 600px; margin: 0 auto;">
+        <div class="icon">✉️</div>
+        <h3>Thanks! Our team will reach out within 24 hours.</h3>
+        <p style="margin-top: 16px;">Check your email client - your message should open automatically. Just send it to complete your request.</p>
+        <a href="index.html" class="btn btn-secondary" style="margin-top: 24px;">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="text-align: center;">
+    <div class="container">
+      <h2 style="margin-bottom: 16px;">Ready to Start?</h2>
+      <p style="margin-bottom: 32px;">Try MailMiner free for 7 days. No credit card required.</p>
+      <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 MailMiner.work | <a href="mailto:support@mailminer.work">support@mailminer.work</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Detect if user came from mailto submission by checking URL hash
+    if (window.location.hash === '#submitted') {
+      document.getElementById('success-section').style.display = 'block';
+      document.querySelector('.contact-grid').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
