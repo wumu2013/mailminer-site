@@ -161,9 +161,15 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--bg-primary);
+  background-color: #F5F5F5;
   border-bottom: 1px solid var(--border);
   padding: 16px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav {
+    background-color: #6d6d6d;
+  }
 }
 
 .nav-inner {
