@@ -476,6 +476,60 @@ p {
 }
 
 /* ========================================
+   Business Packages Toggle
+   ======================================== */
+
+.packages-toggle {
+  border-bottom: none !important;
+}
+
+.packages-toggle details {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.packages-toggle summary {
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 500;
+  list-style: none;
+}
+
+.packages-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.packages-toggle summary::after {
+  content: " ▶";
+  font-size: 12px;
+  transition: transform var(--transition-fast);
+}
+
+.packages-toggle details[open] summary::after {
+  content: " ▼";
+}
+
+.packages-list {
+  margin-top: 12px;
+  padding-left: 0;
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.packages-list li {
+  padding: 10px 16px !important;
+  border-bottom: 1px solid var(--border) !important;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.packages-list li:last-child {
+  border-bottom: none !important;
+}
+
+/* ========================================
    Footer
    ======================================== */
 
